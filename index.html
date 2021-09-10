@@ -1,86 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <!-- meta -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="qkvander">
+    <meta name="copyright" content="Borisov K">
 
     <!-- link -->
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="access/css/style.css" rel="stylesheet">
 
     <!-- title -->
     <title>Modern Game Store</title>
-  </head>
+</head>
 
-  <!-- content -->
+<body>
 
-  <body>
     <!-- header page -->
     <header class="text-gray-600 body-font">
-      <div
-        class="
-          container
-          mx-auto
-          flex flex-wrap
-          p-5
-          flex-col
-          md:flex-row
-          items-center
-        "
-      >
-        <a
-          class="
-            flex
-            title-font
-            font-medium
-            items-center
-            text-gray-900
-            mb-4
-            md:mb-0
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-            ></path>
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a href="/index.html" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 0-5M2 12l10 5 0-5"></path>
           </svg>
-          <span class="ml-3 text-xl">Modern Game Store</span>
-        </a>
-        <nav
-          class="
-            md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400
-            flex flex-wrap
-            items-center
-            text-base
-            justify-center
-          "
-        >
-          <a href="#" class="mr-5 hover:text-gray-900">Товары</a>
-          <a href="#" class="mr-5 hover:text-gray-900">О нас</a>
-          <a href="#" class="mr-5 hover:text-gray-900">Партнеры</a>
-          <a href="#" class="mr-5 hover:text-gray-900">Контакты</a>
-        </nav>
-      </div>
+                <span class="ml-3 text-xl">Modern Game Store</span>
+            </a>
+            <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center">
+                <a href="#" class="mr-5 hover:text-gray-900">Товары</a>
+                <a href="/about.html" class="mr-5 hover:text-gray-900">О нас</a>
+                <a href="#" class="mr-5 hover:text-gray-900">Партнеры</a>
+                <a href="#" class="mr-5 hover:text-gray-900">Контакты</a>
+            </nav>
+            <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"><a href="#">Личный кабинет</a>
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+        </div>
     </header>
+
+
+
+
+
+
+    <!-- section: welcome -->
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-col">
+            <div class="lg:w-4/6 mx-auto">
+                <div class="rounded-lg h-64 overflow-hidden">
+                    <img alt="content" class="object-cover object-center h-full w-full" src="/img/PagePremier.jpg">
+                </div>
+                <div class="flex flex-col sm:flex-row mt-10">
+                    <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                        <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+                        </div>
+                        <div class="flex flex-col items-center text-center justify-center">
+                            <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Команда MGS</h2>
+                            <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                            <p class="text-base">В нашу команду входит уже - #1 человек. (счёт идёт за 1 клиент/1 администратор)</p>
+                        </div>
+                    </div>
+                    <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                        <p class="leading-relaxed text-lg mb-4">Мы являемся лидерами продаж цифровых товаров по всей России и странах СНГ. Покупая товары у нас вы получаете большое преимущество, учитывая наши услуги! Мы долго шли к этому, но чего добились? А добились мы больших достижений и
+                            получили огромный опыт в данной сфере. Мы очень благодарны каждому, кто помог этому проекту и только благодаря им на сайте появились подписки, ивенты, частые скидки и многое другое, каждому мы говорим спасибо!</p>
+                        <a href="/about.html" class="text-indigo-500 inline-flex items-center">Читать далее
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
     <!-- section: popular -->
     <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto flex flex-wrap">
-        <div class="flex w-full mb-20 flex-wrap">
-          <h1
-            class="
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <div class="flex w-full mb-20 flex-wrap">
+                <h1 class="
               sm:text-3xl
               text-2xl
               font-medium
@@ -88,90 +99,66 @@
               text-gray-900
               lg:w-1/3 lg:mb-0
               mb-4
-            "
-          >
-            Популярные товары
-          </h1>
+            ">
+                    Популярные товары
+                </h1>
+            </div>
+            <div class="flex flex-wrap md:-m-2 -m-1">
+                <div class="flex flex-wrap w-1/2">
+                    <div class="md:p-2 p-1 w-1/2">
+                        <a href="#">
+                            <img alt="" class="w-full object-cover h-full object-center block" src="/img/HorizonZeroDawn.jpg" />
+                        </a>
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <a href="#">
+                            <img alt="" class="w-full object-cover h-full object-center block" src="/img/DyingLight2.jpg" />
+                        </a>
+                    </div>
+                    <div class="md:p-2 p-1 w-full">
+                        <a href="#">
+                            <img alt="" class="w-full h-full object-cover object-center block" src="/img/ResidentEvilVillage.jpg" />
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-wrap w-1/2">
+                    <div class="md:p-2 p-1 w-full">
+                        <a href="#">
+                            <img alt="" class="w-full h-full object-cover object-center block" src="/img/HITMAN3.jpg" />
+                        </a>
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <a href="#">
+                            <img alt="" class="w-full object-cover h-full object-center block" src="/img/Terraria.jpg" />
+                        </a>
+                    </div>
+                    <div class="md:p-2 p-1 w-1/2">
+                        <a href="#">
+                            <img alt="" class="w-full object-cover h-full object-center block" src="/img/Outriders.jpg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="flex flex-wrap md:-m-2 -m-1">
-          <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-1/2">
-              <a href="#">
-                <img
-                  alt="gallery"
-                  class="w-full object-cover h-full object-center block"
-                  src="https://dummyimage.com/500x300"
-              /></a>
-            </div>
-            <div class="md:p-2 p-1 w-1/2">
-              <a href="#">
-                <img
-                  alt="gallery"
-                  class="w-full object-cover h-full object-center block"
-                  src="https://dummyimage.com/501x301"
-              /></a>
-            </div>
-            <div class="md:p-2 p-1 w-full">
-              <a href="#">
-                <img
-                  alt="gallery"
-                  class="w-full h-full object-cover object-center block"
-                  src="https://dummyimage.com/600x360"
-              /></a>
-            </div>
-          </div>
-          <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-full">
-              <a href="#">
-                <img
-                  alt="gallery"
-                  class="w-full h-full object-cover object-center block"
-                  src="https://dummyimage.com/601x361"
-              /></a>
-            </div>
-            <div class="md:p-2 p-1 w-1/2">
-              <a href="#">
-                <img
-                  alt="gallery"
-                  class="w-full object-cover h-full object-center block"
-                  src="https://dummyimage.com/502x302"
-              /></a>
-            </div>
-            <div class="md:p-2 p-1 w-1/2">
-              <a href="#">
-                <img
-                  alt="gallery"
-                  class="w-full object-cover h-full object-center block"
-                  src="https://dummyimage.com/503x303"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
     <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
-        <div
-          class="flex flex-wrap w-full mb-20 flex-col items-center text-center"
-        >
-          <h1
-            class="
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+                <h1 class="
               sm:text-3xl
               text-2xl
               font-medium
               title-font
               mb-2
               text-gray-900
-            "
-          >
-            Почему стоит покупать у нас?
-          </h1>
-        </div>
-        <div class="flex flex-wrap -m-4">
-          <div class="xl:w-1/3 md:w-1/2 p-4">
-            <div class="border border-gray-200 p-6 rounded-lg">
-              <div
-                class="
+            ">
+                    Почему стоит покупать у нас?
+                </h1>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                        <div class="
                   w-10
                   h-10
                   inline-flex
@@ -181,33 +168,22 @@
                   bg-purple-100
                   text-purple-500
                   mb-4
-                "
-              >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-6 h-6"
-                  viewBox="0 0 24 24"
-                >
+                ">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
                   <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                 </svg>
-              </div>
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
-                Надежность
-              </h2>
-              <p class="leading-relaxed text-base">
-                Мы славимся актульной защитой, как со стороны клиента так и со
-                стороны разработчиков.
-              </p>
-            </div>
-          </div>
-          <div class="xl:w-1/3 md:w-1/2 p-4">
-            <div class="border border-gray-200 p-6 rounded-lg">
-              <div
-                class="
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                            Надежность
+                        </h2>
+                        <p class="leading-relaxed text-base">
+                            Мы славимся актульной защитой, как со стороны клиента так и со стороны разработчиков.
+                        </p>
+                    </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                        <div class="
                   w-10
                   h-10
                   inline-flex
@@ -217,37 +193,26 @@
                   bg-purple-100
                   text-purple-500
                   mb-4
-                "
-              >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-6 h-6"
-                  viewBox="0 0 24 24"
-                >
+                ">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
                   <circle cx="6" cy="6" r="3"></circle>
                   <circle cx="6" cy="18" r="3"></circle>
                   <path
                     d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"
                   ></path>
                 </svg>
-              </div>
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
-                Динамичность
-              </h2>
-              <p class="leading-relaxed text-base">
-                Вышедшие ивенты и праздники сразу же попадают к нам. И мы знаем
-                чем порадовать наших пользователей.
-              </p>
-            </div>
-          </div>
-          <div class="xl:w-1/3 md:w-1/2 p-4">
-            <div class="border border-gray-200 p-6 rounded-lg">
-              <div
-                class="
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                            Динамичность
+                        </h2>
+                        <p class="leading-relaxed text-base">
+                            Вышедшие ивенты и праздники сразу же попадают к нам. И мы знаем чем порадовать наших пользователей.
+                        </p>
+                    </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                        <div class="
                   w-10
                   h-10
                   inline-flex
@@ -257,125 +222,251 @@
                   bg-purple-100
                   text-purple-500
                   mb-4
-                "
-              >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-6 h-6"
-                  viewBox="0 0 24 24"
-                >
+                ">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
                   <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                   <circle cx="12" cy="7" r="4"></circle>
                 </svg>
-              </div>
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
-                Личный кабинет
-              </h2>
-              <p class="leading-relaxed text-base">
-                Мы позволяем регистрацию на нашем сервисе, чтобы пользователи не
-                теряли свои товары!
-              </p>
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">
+                            Личный кабинет
+                        </h2>
+                        <p class="leading-relaxed text-base">
+                            Мы позволяем регистрацию на нашем сервисе, чтобы пользователи не теряли свои товары!
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>          
-      </div>
     </section>
 
+
+
+
+
+
+
+    <!-- section: comments -->
     <section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
-    <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
-      <h1 class="title-font font-medium text-3xl text-gray-900">Регистрация на проекте</h1>
-      <p class="leading-relaxed mt-4">Благодаря личному кабинету вам откроются большие возможности!</p>
-    </div>
-    <div class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
-      <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Регистрация пользователя</h2>
-      <div class="relative mb-4">
-        <label for="full-name" class="leading-7 text-sm text-gray-600">Почта</label>
-        <input type="text" id="full-name" name="full-name" class="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-      </div>
-      <div class="relative mb-4">
-        <label for="email" class="leading-7 text-sm text-gray-600">Пароль</label>
-        <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-      </div>
-      <button class="text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg">Зарегистрироваться</button>
-    </div>
-  </div>
-</section>
+        <div class="container px-5 py-24 mx-auto">
+            <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Отзывы о сайте</h1>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+          </svg>
+                        <p class="leading-relaxed mb-6">Это лучший сайт что я видел. Тут есть все игры, это прекрасно! Оформил также подписку на скидки, теперь не трачусь. Всем советую данную контору, всё чисто и безапасно, ключи приходят быстро, а главное - мультиплатформенная поддержка!</p>
+                        <a class="inline-flex items-center">
+                            <img alt="testimonial" src="https://dummyimage.com/106x106" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-medium text-gray-900">Unkwnown</span>
+                            <span class="text-gray-500 text-sm">Покупатель</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+          </svg>
+                        <p class="leading-relaxed mb-6">Это лучший сайт что я видел. Тут есть все игры, это прекрасно! Оформил также подписку на скидки, теперь не трачусь. Всем советую данную контору, всё чисто и безапасно, ключи приходят быстро, а главное - мультиплатформенная поддержка!</p>
+                        <a class="inline-flex items-center">
+                            <img alt="testimonial" src="https://dummyimage.com/107x107" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-medium text-gray-900">Unkwnown</span>
+                            <span class="text-gray-500 text-sm">Покупатель</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+          </svg>
+                        <p class="leading-relaxed mb-6">Это лучший сайт что я видел. Тут есть все игры, это прекрасно! Оформил также подписку на скидки, теперь не трачусь. Всем советую данную контору, всё чисто и безапасно, ключи приходят быстро, а главное - мультиплатформенная поддержка!</p>
+                        <a class="inline-flex items-center">
+                            <img alt="testimonial" src="https://dummyimage.com/106x106" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-medium text-gray-900">Unkwnown</span>
+                            <span class="text-gray-500 text-sm">Покупатель</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+          </svg>
+                        <p class="leading-relaxed mb-6">Это лучший сайт что я видел. Тут есть все игры, это прекрасно! Оформил также подписку на скидки, теперь не трачусь. Всем советую данную контору, всё чисто и безапасно, ключи приходят быстро, а главное - мультиплатформенная поддержка!</p>
+                        <a class="inline-flex items-center">
+                            <img alt="testimonial" src="https://dummyimage.com/107x107" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-medium text-gray-900">Unkwnown</span>
+                            <span class="text-gray-500 text-sm">Покупатель</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+          </svg>
+                        <p class="leading-relaxed mb-6">Это лучший сайт что я видел. Тут есть все игры, это прекрасно! Оформил также подписку на скидки, теперь не трачусь. Всем советую данную контору, всё чисто и безапасно, ключи приходят быстро, а главное - мультиплатформенная поддержка!</p>
+                        <a class="inline-flex items-center">
+                            <img alt="testimonial" src="https://dummyimage.com/106x106" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-medium text-gray-900">Unkwnown</span>
+                            <span class="text-gray-500 text-sm">Покупатель</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/2 w-full">
+                    <div class="h-full bg-gray-100 p-8 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+          </svg>
+                        <p class="leading-relaxed mb-6">Это лучший сайт что я видел. Тут есть все игры, это прекрасно! Оформил также подписку на скидки, теперь не трачусь. Всем советую данную контору, всё чисто и безапасно, ключи приходят быстро, а главное - мультиплатформенная поддержка!</p>
+                        <a class="inline-flex items-center">
+                            <img alt="testimonial" src="https://dummyimage.com/107x107" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                            <span class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-medium text-gray-900">Unkwnown</span>
+                            <span class="text-gray-500 text-sm">Покупатель</span>
+                            </span>
 
-<section class="text-gray-600 body-font relative">
-  <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
-    <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-      <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73416.69120482776!2d52.23860871849835!3d54.89815502339441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41605c5672d84245%3A0xc5e4cdd6efdd5177!2z0JDQu9GM0LzQtdGC0YzQtdCy0YHQuiwg0KDQtdGB0L8uINCi0LDRgtCw0YDRgdGC0LDQvQ!5e0!3m2!1sru!2sru!4v1631266846460!5m2!1sru!2sru" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
-      <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
-        <div class="lg:w-1/2 px-6">
-          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
-          <p class="mt-1">Photo booth tattooed prism, portland taiyaki hoodie neutra typewriter</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
-          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-          <a class="text-purple-500 leading-relaxed">example@email.com</a>
-          <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
-          <p class="leading-relaxed">123-456-7890</p>
-        </div>
-      </div>
-    </div>
-    <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-      <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Обратная связь</h2>
-      <div class="relative mb-4">
-        <label for="name" class="leading-7 text-sm text-gray-600">Имя</label>
-        <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-      </div>
-      <div class="relative mb-4">
-        <label for="email" class="leading-7 text-sm text-gray-600">Почта</label>
-        <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-      </div>
-      <div class="relative mb-4">
-        <label for="message" class="leading-7 text-sm text-gray-600">Сообщение</label>
-        <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-      </div>
-      <button class="text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">Отправить</button>
-   </div>
-  </div>
-</section>
+    </section>
 
-<footer class="text-gray-600 body-font">
-  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+
+
+
+
+
+
+    <!-- section: login up -->
+    <section id="authorization" class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+            <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+                <h1 class="title-font font-medium text-3xl text-gray-900">Регистрация на проекте</h1>
+                <p class="leading-relaxed mt-4">Благодаря личному кабинету вам откроются большие возможности!</p>
+            </div>
+            <div class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+                <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Регистрация пользователя</h2>
+                <div class="relative mb-4">
+                    <label for="email" class="leading-7 text-sm text-gray-600">Почта</label>
+                    <input type="email" id="full-name" name="full-name" class="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                    <label for="password" class="leading-7 text-sm text-gray-600">Пароль</label>
+                    <input type="password" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <button class="text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg">Зарегистрироваться</button>
+                <p class="text-xs text-gray-500 mt-3">Есть аккаунт?
+                    <a href="#" class="text-purple-500">Войти</a></p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- adress: feedback -->
+    <section class="text-gray-600 body-font relative">
+        <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+            <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73416.69120482776!2d52.23860871849835!3d54.89815502339441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41605c5672d84245%3A0xc5e4cdd6efdd5177!2z0JDQu9GM0LzQtdGC0YzQtdCy0YHQuiwg0KDQtdGB0L8uINCi0LDRgtCw0YDRgdGC0LDQvQ!5e0!3m2!1sru!2sru!4v1631266846460!5m2!1sru!2sru"
+                    style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+                <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+                    <div class="lg:w-1/2 px-6">
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">Мы находимся по адресу:</h2>
+                        <p class="mt-1">Республика Татарстан, г. Альметьевск</p>
+                    </div>
+                    <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">Почта</h2>
+                        <a class="text-purple-500 leading-relaxed">mgs@support.ru</a>
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">Телефон</h2>
+                        <p class="leading-relaxed">123-456-7890</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Обратная связь</h2>
+                <div class="relative mb-4">
+                    <label for="name" class="leading-7 text-sm text-gray-600">Имя</label>
+                    <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                    <label for="email" class="leading-7 text-sm text-gray-600">Почта</label>
+                    <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                    <label for="message" class="leading-7 text-sm text-gray-600">Сообщение</label>
+                    <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                </div>
+                <button class="text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded text-lg">Отправить</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- footer: copyright/contacts -->
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a href="/index.html" class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 0-5M2 12l10 5 0-5"></path>
       </svg>
-      <span class="ml-3 text-xl">Modern Game Store</span>
-    </a>
-    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021 Modern Game Store</p>
-    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-      <a class="text-gray-500">
+                <span class="ml-3 text-xl">Modern Game Store</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021 Modern Game Store</p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a href="#" class="text-gray-500">
         <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
           <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
         </svg>
       </a>
-      <a class="ml-3 text-gray-500">
+     <a href="#" class="ml-3 text-gray-500">
         <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
           <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
         </svg>
       </a>
-      <a class="ml-3 text-gray-500">
+      <a href="#" class="ml-3 text-gray-500">
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
           <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
           <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
         </svg>
       </a>
-      <a class="ml-3 text-gray-500">
+      <a href="#" class="ml-3 text-gray-500">
         <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
           <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
           <circle cx="4" cy="4" r="2" stroke="none"></circle>
         </svg>
       </a>
     </span>
-  </div>
-</footer>
-  </body>
-  <!-- other -->
+        </div>
+    </footer>
+    <!-- other -->
+    <script src="/access/js/smooth.js"></script>
+</body>
+
 </html>
